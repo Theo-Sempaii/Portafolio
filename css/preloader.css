@@ -7,7 +7,6 @@
 html, body {
   width: 100%;
   height: 100%;
-  background-color: rgb(32, 32, 32);
 }
 
 #pre-loader-container {
@@ -19,6 +18,16 @@ html, body {
   align-items: center;
   animation-name: open;
   animation-duration: 2s;
+}
+
+.pre-loader-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
 }
 
 .pre-loader-item {
@@ -68,6 +77,6 @@ html, body {
 
 @keyframes open {
   0% {
-    transform: scale(0, 0)
+    transform: scale(0, 0);
   }
 }
