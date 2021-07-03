@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/preloader.css">
+
+  <title>TheoSempaii | Home</title>
+</head>
+
+<body>
+  <div id="pre-loader-container">
+    <div class="pre-loader-item big">
+      <div class="pre-loader-item medium">
+        <div class="pre-loader-item small">
+          <img src="/img/me1.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+
+
+        const item = document.getElementById('pre-loader-container')
+        item.animate([
+          { transform: 'scale(1,1)' },
+          { transform: 'scale(0,0)' }
+
+        ], {
+          duration: 1000,
+
+        }).onfinish = () => item.remove()
+      }, 3000);
+    }
+  </script>
+</body>
+
+</html>

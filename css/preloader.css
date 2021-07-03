@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+}
+
+#pre-loader-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: open;
+  animation-duration: 2s;
+}
+
+.pre-loader-item {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: expand;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  box-shadow: rgba(0, 0, 0, 0.185) 0px 0px 100px;
+}
+
+.pre-loader-item img {
+  width: 70%;
+  border-radius: 100%;
+}
+
+.small {
+  width: 125px;
+  height: 125px;
+  background-color: aquamarine;
+  background-color: rgb(82, 151, 128);
+}
+
+.medium {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(65, 119, 101);
+}
+
+.big {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(50, 92, 78);
+}
+
+@keyframes expand {
+  0% {}
+  50% {
+    transform: scale(1.2, 1.2)
+  }
+  100% {
+    transform: scale(1, 1)
+  }
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0, 0)
+  }
+}
