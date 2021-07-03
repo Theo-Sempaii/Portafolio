@@ -1,16 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
 #pre-loader-container {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,7 +10,7 @@ html, body {
 }
 
 .pre-loader-bg {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   display: flex;
