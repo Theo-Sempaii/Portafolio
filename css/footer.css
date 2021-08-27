@@ -1,0 +1,116 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: #ABC4FF;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  color: whitesmoke;
+  font-size: small;
+}
+
+.footer-container span {
+  margin: 0 10% 0 10%
+}
+
+.footer-button-container {
+  margin-right: 1%;
+  padding: 1%;
+}
+
+.footer-button {
+  border-radius: 100%;
+  transition-duration: 0.5s;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  font-size: small;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.164);
+}
+
+.footer-button a {
+  font-size: 0px;
+  transition-duration: 0.5s;
+  margin-left: 2%;
+}
+
+.footer-button:hover {
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  padding: 8px;
+}
+
+.footer-button:hover a {
+  font-size: smaller;
+  transition-duration: 0.7s;
+}
+
+.discord, .facebook {
+  background-color: #0056f7;
+}
+
+.instagram {
+  background: linear-gradient(225deg, #5f00f7, #f79400);
+}
+
+.twitter {
+  background-color: #5990f5;
+}
+
+.paypal {
+  background-color: #0059ff;
+}
+
+.github {
+  background-color: #202020;
+}
+
+.heart {
+  color: rgb(219, 100, 100);
+  animation-name: heartbeat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    font-size: small
+  }
+  50% {
+    font-size: 8px;
+  }
+  100% {
+    font-size: small
+  }
+}
+
+.footer-me {
+  width: 30%;
+  text-align: center;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.wave {
+  justify-content:center; 
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  height: 40px;
+}
