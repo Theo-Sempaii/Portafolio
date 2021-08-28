@@ -3,6 +3,8 @@
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
+  transition-duration: 0.7;
+  z-index: 5;
 }
 
 a {
@@ -14,6 +16,7 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #E2EAFC;
+  z-index: 0;
 }
 
 .container-flex {
@@ -33,14 +36,15 @@ html, body {
   display: flex;
   align-items: center;
   min-width: 300px;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 .profile-card-box {
   width: 90%;
   height: 90%;
   background-color: #B6CCFE;
-  border-radius: 10px
+  border-radius: 10px;
+  min-height: 450px;
 }
 
 .general-info-container {
@@ -88,8 +92,7 @@ html, body {
   border-radius: 10px;
 }
 
-
-.profile-card-img-container img{
+.profile-card-img-container img {
   height: 175px;
   border-radius: 100%;
 }
@@ -106,4 +109,57 @@ html, body {
   background-color: #0000002a;
   padding: 2%;
   border-radius: 100%;
+}
+
+.profile-info-container {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-info-box {
+  background-color: rgba(0, 0, 0, 0.158);
+  height: 70%;
+  width: 90%;
+  border-radius: 12px;
+  min-height: 100px;
+}
+
+.profile-title {
+  color: whitesmoke;
+  font-weight: bolder;
+  text-align: center;
+  font-size: large;
+  margin-top: 1%
+}
+
+.profile-mini-info {
+  color: rgba(255, 255, 255, 0.637);
+  font-weight: bold;
+  text-align: center;
+  margin: 2% 5% 2% 5%;
+  font-size: small;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E2EAFC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.171);
+  transition-duration: 1s
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.26);
+  transition-duration: 1s
 }
