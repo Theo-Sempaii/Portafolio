@@ -10,6 +10,7 @@
 #preloader-base {
   width: 400%;
   height: 400%;
+  z-index: 5;
   transform: rotate(45deg);
   background-color: rgb(255, 255, 255);
 }
@@ -17,5 +18,22 @@
 #preloader-left, #preloader-right {
   width: 100%;
   height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+#preloader-image {
+  z-index: 10;
+  width: 20%;
+  padding: 2%;
+  background: linear-gradient(0deg, red, rgb(255, 136, 0));
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader-image img {
+  width: 100%;
   background-color: rgb(255, 255, 255);
 }
