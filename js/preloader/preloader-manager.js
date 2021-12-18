@@ -2,6 +2,7 @@
 
 const preloaderBase = document.getElementById('preloader-base');
 const preloaderImage = document.getElementById('preloader-image')
+const container = document.getElementById('preloader-container');
 window.onload = main
 
 translatePreLoaderImage()
@@ -16,19 +17,15 @@ function main() {
 }
 
 
-function createPreLoaderBaseParticles() {
-
-}
-
 function translatePreLoaderImage() {
   setInterval(() => {
     const deg = !preloaderImage.style.background.includes('deg') ? 180 : preloaderImage.style.background.split('deg')[0].split('(')[1]
-    preloaderImage.style.background = `linear-gradient(${deg < 360 ? Number(deg) + 5 : 0}deg, red, rgb(255, 136, 0))`
+    preloaderImage.style.background = `linear-gradient(${deg < 360 ? Number(deg) + 5 : 0}deg, red, rgb(255, 0, 212))`
   }, 10);
 }
 
 function clearPreloader() {
-  preloaderImage.style.transitionDuration = '0.8s'
+  preloaderImage.style.transitionDuration = `1s`
   preloaderImage.style.transitionTimingFunction = 'ease-in-out';
   preloaderImage.style.width = '40%'
   setTimeout(() => {
@@ -36,6 +33,9 @@ function clearPreloader() {
     preloaderImage.style.padding = '0%'
   }, 800);
   movePreLoaderBars()
+  setTimeout(()=>{
+    container.remove()
+  }, 5000)
 }
 
 

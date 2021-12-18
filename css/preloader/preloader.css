@@ -18,7 +18,7 @@
 #preloader-left, #preloader-right {
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(80, 217, 183), rgb(174, 0, 255));
 }
 
 
@@ -26,7 +26,7 @@
   z-index: 10;
   width: 20%;
   padding: 2%;
-  background: linear-gradient(0deg, red, rgb(255, 136, 0));
+  background: linear-gradient(0deg, red, rgb(255, 0, 212));
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -35,5 +35,6 @@
 
 #preloader-image img {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
+
 }
