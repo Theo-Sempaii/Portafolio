@@ -5,15 +5,11 @@
   font-family: 'Oswald', sans-serif;
 }
 
-html, body, .header-container {
+html, body, .header-container, .header-image-image {
   height: 100%;
   width: 100%;
 }
 
-main {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-}
 
 header {
   background: linear-gradient(45deg, rgb(64, 67, 233), rgb(117, 176, 224));
@@ -29,20 +25,113 @@ header {
 }
 
 .column3 {
-  width: 33%;
+  width: 30%;
   height: 100%;
 }
 
-.header-image-image {
+.header-title, .header-image-image {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .header-title h1 {
+    font-size: 18px;
+  }
+
+  .header-title p {
+    font-size: 14px;
+  }
+}
+
+
+main {
   width: 100%;
-  height: 100%;
-  justify-content: center;
+  height: 70%;
+  background-color: #F1FAEE;
+}
+
+footer {
+  width: 100%;
+  height: 5%;
+  background: linear-gradient(45deg, #4f46cf, #3f60b9);
+  text-align: center;
+  color: white;
+  font-size: small;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.header-title{
-  justify-content: center;
+footer a:hover, p:hover {
+  color: rgba(240, 248, 255, 0.384);
+  transition-duration: 0.3s;
+}
+
+footer strong {
+  color: rgb(240, 58, 58);
+  animation-name: footerHeart;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.footer-column {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+footer a, p {
+  color: white;
+  transition-duration: 0.3s;
+}
+
+@keyframes footerHeart {
+  0% {
+    color: red;
+    font-size: medium;
+  }
+
+  100% {
+    font-size: small;
+  }
+}
+
+@keyframes footerHeartMin {
+  0% {
+    color: red;
+    font-size: 9px;
+  }
+
+  100% {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer a, p, strong {
+    font-size: 8px;
+  }
+
+  footer strong {
+    animation-name: footerHeartMin;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #365f79;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #457B9D;
 }
