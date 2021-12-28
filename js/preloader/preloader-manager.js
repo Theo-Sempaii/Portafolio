@@ -20,7 +20,7 @@ function main() {
 function translatePreLoaderImage() {
   setInterval(() => {
     const deg = !preloaderImage.style.background.includes('deg') ? 180 : preloaderImage.style.background.split('deg')[0].split('(')[1]
-    preloaderImage.style.background = `linear-gradient(${deg < 360 ? Number(deg) + 5 : 0}deg, red, rgb(255, 0, 212))`
+    preloaderImage.style.background = `linear-gradient(${deg < 360 ? Number(deg) + 5 : 0}deg, rgb(68, 0, 255), rgb(0, 174, 255))`
   }, 10);
 }
 

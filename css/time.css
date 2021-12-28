@@ -1,0 +1,7 @@
+.day-mode {
+  background: linear-gradient(90deg, rgb(64, 67, 233), rgb(117, 176, 224));
+}
+
+.night-mode {
+  background: linear-gradient(90deg, rgb(29, 29, 61), rgb(37, 59, 77));
+}

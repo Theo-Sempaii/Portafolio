@@ -12,7 +12,6 @@ html, body, .header-container, .header-image-image {
 
 
 header {
-  background: linear-gradient(45deg, rgb(64, 67, 233), rgb(117, 176, 224));
   width: 100%;
   height: 50%;
   color: white;
@@ -55,7 +54,6 @@ main {
 footer {
   width: 100%;
   height: 5%;
-  background: linear-gradient(45deg, #4f46cf, #3f60b9);
   text-align: center;
   color: white;
   font-size: small;
@@ -120,6 +118,7 @@ footer a, p {
     animation-duration: 1s;
   }
 }
+
 
 /* width */
 ::-webkit-scrollbar {

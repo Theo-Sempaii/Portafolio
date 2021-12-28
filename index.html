@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loading...</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/swipper.css">
   <link rel="stylesheet" href="css/preloader/preloader.css">
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/time.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +22,7 @@
 
   <!-- Iconfy -->
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-  
+
   <!-- External representation -->
   <meta property="og:image:alt" content="Novice developer passionate about learning and creating new things! - TheoSempaii">
   <meta property="og:title" content="TheoSempaii">
@@ -28,6 +30,10 @@
   <meta property="og:description" content="Novice developer passionate about learning and creating new things! - TheoSempaii">
   <meta property="og:image" content="https://theosempaii.github.io/theo-sempaii.github.io/img/icon.png">
   <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#78a4fa">
+
+  <!-- Swipper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -39,15 +45,14 @@
       <div id="preloader-right"></div>
     </div>
     <div id="preloader-image">
-      <img src="img/icon.png" alt="" style="border-radius: 100%;">
+      <img src="img/icon.png" id="plimg" alt="" style="border-radius: 100%;">
     </div>
 
   </div>
-  <script src="js/preloader/preloader-manager.js"></script>
   <!-- Preloader -->
 
   <!-- Main -->
-  <header>
+  <header id="header" class="day-mode">
     <div class="header-container">
       <div class="header-title column3">
         <div class="header-text">
@@ -66,15 +71,27 @@
   </header>
 
   <main>
-
+    <!-- Slider main container -->
+    <div class="swiper day-mode">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide present-js">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
   </main>
 
-  <footer>
+  <footer id="footer" class="day-mode">
     <div class="column3 footer-column">
       <a href="https://discord.gg/svSvmDKfh4">
-        <i class="fab fa-discord"></i> 
+        <i class="fab fa-discord"></i>
       </a>
-      <a href="https://es.fiverr.com/theosempaii?up_rollout=true">
+      <a href="https://es.fiverr.com/theosempaii">
         <span class="iconify" data-icon="jam:fiverr"></span>
       </a>
       <a href="https://github.com/TheoSempaii">
@@ -94,11 +111,13 @@
     <div class="column3 footer-column">
       <p>v1.0.0</p>
     </div>
-    
-    
+
+
   </footer>
   <!-- Main -->
-
+  <script src="js/time.js"></script>
+  <script src="js/swipper.js"></script>
+  <script src="js/preloader/preloader-manager.js"></script>
 
 </body>
 
