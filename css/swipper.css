@@ -1,5 +1,37 @@
-.swiper {
+.swiper, .lang-container {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.lang-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+
+.lang-mid-img img {
+  width: 50%;
+  border-radius: 100%;
+  padding: 2%;
+}
+
+.lang-mid-img, .lang-mid, .lang-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-mid-txt {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.lang-right-list {
+  padding-top: 5%;
 }

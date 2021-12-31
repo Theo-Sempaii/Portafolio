@@ -42,6 +42,14 @@ header {
   .header-title p {
     font-size: 14px;
   }
+
+  li {
+    font-size: 10px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
 }
 
 

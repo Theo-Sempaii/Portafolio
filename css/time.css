@@ -5,3 +5,64 @@
 .night-mode {
   background: linear-gradient(90deg, rgb(29, 29, 61), rgb(37, 59, 77));
 }
+
+#time-icon-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#time-icon-container img {
+  height: 50%;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 100%;
+  transition-duration: 0.3s;
+}
+
+#time-icon-container img:hover {
+  padding: 10%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0.199);
+}
+
+@media (max-width: 500px) {
+  #time-icon-container img {
+    height: 30%;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 100%;
+    transition-duration: 0.3s;
+  }
+
+  #time-icon-container img:hover {
+    padding: 10%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.199);
+  }
+}
+
+
+
+
+.transitionContainer {
+  background: linear-gradient(90deg, rgb(29, 29, 61), rgb(37, 59, 77), rgb(64, 67, 233), rgb(117, 176, 224));
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  background-size: 200%;
+  background-position: 0 100%;
+  transition-duration: 1s;
+}
+
+.bgIN, .bgTID {
+  background-position: 0 100%;
+}
+
+.bgID, .bgTIN {
+  background-position: 100% 200%;
+}

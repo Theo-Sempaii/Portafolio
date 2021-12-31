@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loading...</title>
   <link rel="stylesheet" href="css/index.css">
-  
+
   <link rel="stylesheet" href="css/preloader/preloader.css">
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/time.css">
@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="css/swipper.css">
 </head>
 
-<body>
+<body class="day-mode" id="body">
   <!-- Preloader -->
   <div id="preloader-container">
 
@@ -63,25 +63,212 @@
         </div>
       </div>
       <div class="header-image column3">
-        <div class="header-image-image">
-        </div>
-        <div class="header-image-text">
+      </div>
+      <div class="header-links column3">
+        <div id="time-icon-container">
+          <img src="" alt="" id="time-icon">
         </div>
       </div>
-      <div class="header-links column3"></div>
     </div>
+
   </header>
 
+  <div style="height: 50px; overflow: hidden;" class="day-mode">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C678.00,180.14 664.46,237.36 676.87,-199.72 L609.15,219.60 L0.00,149.98 Z" style="stroke: none; fill: aliceblue;"></path>
+    </svg>
+  </div>
+
   <main>
+
+
     <!-- Slider main container -->
+
     <div class="swiper day-mode">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide present-js">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
+
+        <!-- Slide -->
+        <div class="swiper-slide lang-container">
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Projects
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>Currently nothing</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column3 lang-mid lang-col">
+            <div class="lang-mid-box">
+              <div class="lang-mid-img">
+                <img src="img/JavaScript.png" alt="">
+              </div>
+              <h3 class="lang-mid-txt">JavaScript</h3>
+            </div>
+          </div>
+
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Knowledge
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>OOP</b> (Object Oriented Programming)</li>
+                <li><b>React.js</b> & <b>React Native</b></li>
+                <li><b>Angular.js</b></li>
+                <li><b>jQuery</b></li>
+                <li><b>Vue.js</b></li>
+                <li><b>DOM manipulation</b></li>
+                <li><b>NodeJS</b> & <b>NPM</b></li>
+                <li><b>Promises</b> (Async & Await)</li>
+                <li><b>Express.js</b></li>
+                <li><b>ES5</b>, <b>ES6</b> & <b>ES7</b></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide -->
+
+        <!-- Slide -->
+        <div class="swiper-slide lang-container">
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Projects
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>Currently nothing</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column3 lang-mid lang-col">
+            <div class="lang-mid-box">
+              <div class="lang-mid-img">
+                <img src="img/JavaScript.png" alt="">
+              </div>
+              <h3 class="lang-mid-txt">Golang</h3>
+            </div>
+          </div>
+
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Knowledge
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>OOP</b> (Object Oriented Programming)</li>
+                <li><b>React.js</b> & <b>React Native</b></li>
+                <li><b>Angular.js</b></li>
+                <li><b>jQuery</b></li>
+                <li><b>Vue.js</b></li>
+                <li><b>DOM manipulation</b></li>
+                <li><b>NodeJS</b> & <b>NPM</b></li>
+                <li><b>Promises</b> (Async & Await)</li>
+                <li><b>Express.js</b></li>
+                <li><b>ES5</b>, <b>ES6</b> & <b>ES7</b></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide -->
+
+        <!-- Slide -->
+        <div class="swiper-slide lang-container">
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Projects
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>Currently nothing</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column3 lang-mid lang-col">
+            <div class="lang-mid-box">
+              <div class="lang-mid-img">
+                <img src="img/JavaScript.png" alt="">
+              </div>
+              <h3 class="lang-mid-txt">C#</h3>
+            </div>
+          </div>
+
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Knowledge
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>OOP</b> (Object Oriented Programming)</li>
+                <li><b>React.js</b> & <b>React Native</b></li>
+                <li><b>Angular.js</b></li>
+                <li><b>jQuery</b></li>
+                <li><b>Vue.js</b></li>
+                <li><b>DOM manipulation</b></li>
+                <li><b>NodeJS</b> & <b>NPM</b></li>
+                <li><b>Promises</b> (Async & Await)</li>
+                <li><b>Express.js</b></li>
+                <li><b>ES5</b>, <b>ES6</b> & <b>ES7</b></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide -->
+
+        <!-- Slide -->
+        <div class="swiper-slide lang-container">
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Projects
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>Currently nothing</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column3 lang-mid lang-col">
+            <div class="lang-mid-box">
+              <div class="lang-mid-img">
+                <img src="img/JavaScript.png" alt="">
+              </div>
+              <h3 class="lang-mid-txt">Web Development</h3>
+            </div>
+          </div>
+
+          <div class="column3 lang-right lang-col">
+            <div class="lang-right-box">
+              <h3 class="lang-right-title">
+                Knowledge
+              </h3>
+              <ul class="lang-right-list">
+                <li><b>OOP</b> (Object Oriented Programming)</li>
+                <li><b>React.js</b> & <b>React Native</b></li>
+                <li><b>Angular.js</b></li>
+                <li><b>jQuery</b></li>
+                <li><b>Vue.js</b></li>
+                <li><b>DOM manipulation</b></li>
+                <li><b>NodeJS</b> & <b>NPM</b></li>
+                <li><b>Promises</b> (Async & Await)</li>
+                <li><b>Express.js</b></li>
+                <li><b>ES5</b>, <b>ES6</b> & <b>ES7</b></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slide -->
+
+
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
